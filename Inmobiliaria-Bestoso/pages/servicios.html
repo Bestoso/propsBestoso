@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../indexv2.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <body class="grid-container">
+        <header class="navBar">
+                <p class="logo">Martinez Riveros <i class="italica">Propiedades</i></p>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../indexv2.html">Home</a></li>
+                        <li><a href="../indexv2.html#quienes-somos">Empresa</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section id="hero">
+            <h1 class="titulo">Tu Inmobiliaria de confianza <br><span class="acento">Servicios</span></h1>
+        </section>
+
+        <section id="servicios">
+            <ul>
+                <li> <a href="#">tasaciones</a></li>
+                <li>compra/venta</li>
+                <li>administracion de propiedades</li>
+                <li>sucesiones</li>
+            </ul>
+        </section>
+    
+        <footer>
+            <form action="/pages/contacto.html">
+                <button>Contactanos</button>
+
+                <div class="redesfoot">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        
+            <p>&copy;Martinez Riveros Propiedades. Todos los derechos reservados</p>
+        </footer>
+        
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
+</body>
+</html>

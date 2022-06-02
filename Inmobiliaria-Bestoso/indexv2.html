@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexv2.css">
+    <title>Riveros Propiedades</title>
+</head>
+
+<body class="grid-container">
+    <header class="navBar">
+            <p class="logo">Martinez Riveros <i class="italica">Propiedades</i></p>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#quienes-somos">Empresa</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="pages/propiedades.html">Propiedades</a></li>
+                    <li><a href="pages/asesoramiento.html">Asesoramiento</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1 class="titulo">Tu Inmobiliaria <span class="acento">de confianza</span></h1>
+            <form action="pages/propiedades.html">
+        <button class="generalBtn">Encontra tu lugar</button>
+        </form>
+    </section>
+
+    <section id="quienes-somos">
+        <div class="nosotros-img"></div> <!-- Imagen para sitio web desktop NO MOBILE -->
+        <div class="texto">
+            <h2>Propiedades <span class="acento">Martinez Riveros</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, magnam cum. Sunt qui, reiciendis, ipsa distinctio consequuntur eaque quam reprehenderit velit impedit animi ex. Voluptate nemo accusantium consectetur incidunt sunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim voluptatum aperiam in assumenda non commodi earum officiis ipsam harum illo alias quidem adipisci, eaque quae iure asperiores nulla rerum. <span class="acento">Lorem ipsum dolor sit</span>, amet consectetur adipisicing elit. voluptatum aperiam in assumenda non commodi earum officiis ipsam harum illo alias quidem adipisci, eaque quae iure asperiores nulla rerum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptatum aperiam in assumenda non commodi earum officiis ipsam harum illo alias quidem adipisci, eaque quae iure asperiores nulla rerum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+    <!-- APARTADO INSCRIPCION -->
+
+    <section id="hero2">
+        <section class="cont-form"><!-- display grid -->
+            <div class="cont-form__texto">
+                <h3>Martinez Riveros Propiedades</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi et adipisci quaerat velit incidunt possimus libero optio maiores sequi quod, culpa quis commodi, neque provident odit quos accusantium est. Praesentium quis itaque repudiandae vel nulla. Dolore aperiam, quasi tenetur consectetur molestiae odio iusto optio recusandae facilis in. Cum delectus, facere voluptatibus quam accusamus iure architecto alias quibusdam laudantium eius illo beatae iste fugit perspiciatis, eaque maxime neque magnam, dolorum qui!</p>
+            </div>
+    
+            <div class="cont-form__formulario">
+                <h3>¡Envianos tu mensaje!</h3>
+                <form action="correo.php" method="post">
+                <input type="text" name="email" id="email" class="mail" placeholder="ingrese su email" required>
+                <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </section>
+
+<footer>
+    <form action="/pages/contacto.html">
+        <button class="generalBtn">Contactanos</button>
+
+    <p>&copy;Martinez Riveros Propiedades. Todos los derechos reservados</p>
+</footer>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo",window.scrollY>0);
+    })
+</script>
+
+</body>
+</html>
