@@ -243,9 +243,9 @@ form{
     grid-column:8;
     grid-row: 2;
 
-  }
-  
-  .input {
+}
+
+.input {
     min-height: 50px;
     max-width: 150px;
     padding: 0 1rem;
@@ -254,9 +254,9 @@ form{
     border: 1px solid #c9832c;
     border-radius: 6px 0 0 6px;
     background-color: transparent;
-  }
-  
-  .button--submit {
+}
+
+.button--submit {
     min-height: 50px;
     padding: .5em 1em;
     border: none;
@@ -266,17 +266,17 @@ form{
     font-size: 15px;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
-  }
-  
-  .button--submit:hover {
+}
+
+.button--submit:hover {
     background-color: #a7620d
-  }
-  
-  .input:focus, .input:focus-visible {
+}
+
+.input:focus, .input:focus-visible {
     border-color: #c9832c;
     outline: none;
-  }
-  
+}
+
 
 footer{
     display: flex;
@@ -687,7 +687,7 @@ footer p{
         background-image:url("assets/img-cont.png");
         background-size: cover;
         background-position: center center;
-        box-shadow: 2px 2px 10px rgba(240, 240, 240, 0.3);
+        box-shadow: 1px 1px 1px rgba(240, 240, 240, 0.3);
         height: 300px;
         width: 450px;
         grid-column: 1/2;
