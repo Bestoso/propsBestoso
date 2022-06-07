@@ -154,7 +154,7 @@ header a:hover{
     flex-direction: column;
     height: 54vh;
     color:white;
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("assets/moderno.jpg");
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../assets/moderno.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -199,7 +199,7 @@ form{
 }
 
 #hero2{
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("assets/img-form.png");
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../assets/img-form.png");
     background-color: grey;
     height: 0vh;
     background-position: center center;
@@ -321,7 +321,7 @@ footer p{
 }
 
 #tarjetas .img-props1{
-    background: url("assets/prop1.jpg");
+    background: url("../assets/prop1.jpg");
     background-color: grey;
     height: 150px;
     width: 75%;
@@ -333,7 +333,7 @@ footer p{
 }
 
 #tarjetas .img-props2{
-    background: url("assets/prop2.jpg");
+    background: url("../assets/prop2.jpg");
     background-color: grey;
     height: 150px;
     width: 75%;
@@ -344,7 +344,7 @@ footer p{
 }
 
 #tarjetas .img-props3{
-    background: url("assets/prop3.jpg");
+    background: url("../assets/prop3.jpg");
     height: 150px;
     width: 75%;
     background-position: center center;
@@ -354,7 +354,7 @@ footer p{
 }
 
 #tarjetas .img-props4{
-    background: url("assets/prop4.jpg");
+    background: url("../assets/prop4.jpg");
     height: 150px;
     width: 75%;
     background-position: center center;
@@ -364,7 +364,7 @@ footer p{
 }
 
 #tarjetas .img-props5{
-    background: url("assets/prop5.jpg");
+    background: url("../assets/prop5.jpg");
     height: 150px;
     width: 75%;
     background-position: center center;
@@ -374,7 +374,7 @@ footer p{
 }
 
 #tarjetas .img-props6{
-    background: url("assets/prop6.jpg");
+    background: url("../assets/prop6.jpg");
     height: 150px;
     width: 75%;
     background-position:center center;
@@ -384,7 +384,7 @@ footer p{
 }
 
 #tarjetas .img-props7{
-    background: url("assets/prop7.jpg");
+    background: url("../assets/prop7.jpg");
     height: 150px;
     width: 75%;
     background-position: center center;
@@ -394,7 +394,7 @@ footer p{
 }
 
 #tarjetas .img-props8{
-    background: url("assets/prop8.jpg");
+    background: url("../assets/prop8.jpg");
     height: 150px;
     width: 75%;
     background-position: center center;
@@ -404,7 +404,7 @@ footer p{
 }
 
 #tarjetas .img-props9{
-    background: url("assets/prop9.jpg");
+    background: url("../assets/prop9.jpg");
     height: 150px;
     width: 75%;
     background-position: center center;
@@ -684,7 +684,7 @@ footer p{
     #quienes-somos .nosotros-img{
         margin: 30px 0px 20px 40px;
         border-radius: 15px;
-        background-image:url("assets/img-cont.png");
+        background-image:url("../assets/img-cont.png");
         background-size: cover;
         background-position: center center;
         box-shadow: 1px 1px 1px rgba(240, 240, 240, 0.3);
