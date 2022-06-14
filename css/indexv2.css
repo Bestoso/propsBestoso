@@ -1,3 +1,5 @@
+/* colores */
+/* mixins */
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 .generalBtn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: rgba(255, 255, 255, 0.1215686275);
+  background-color: rgba(20, 20, 20, 0.4745098039);
   border: 1px solid #D9A566;
   border-radius: 20px;
   transition: all 0.2s ease-in;
@@ -285,7 +287,6 @@ footer p {
 }
 #tarjetas .img-props1 {
   background: url("../assets/prop1.jpg");
-  background-color: grey;
   height: 150px;
   width: 75%;
   background-position: center center;
@@ -296,13 +297,13 @@ footer p {
 }
 #tarjetas .img-props2 {
   background: url("../assets/prop2.jpg");
-  background-color: grey;
   height: 150px;
   width: 75%;
   background-position: center center;
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props3 {
   background: url("../assets/prop3.jpg");
@@ -312,6 +313,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props4 {
   background: url("../assets/prop4.jpg");
@@ -321,6 +323,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props5 {
   background: url("../assets/prop5.jpg");
@@ -330,6 +333,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props6 {
   background: url("../assets/prop6.jpg");
@@ -339,6 +343,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props7 {
   background: url("../assets/prop7.jpg");
@@ -348,6 +353,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props8 {
   background: url("../assets/prop8.jpg");
@@ -357,6 +363,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas .img-props9 {
   background: url("../assets/prop9.jpg");
@@ -366,6 +373,7 @@ footer p {
   background-size: cover;
   border-radius: 10px;
   border: 2px solid #b9894d;
+  margin-top: 10px;
 }
 #tarjetas p {
   color: #D9A566;
@@ -436,6 +444,58 @@ footer p {
   margin: 10px;
 }
 
+/* SERVICIOS */
+#servicios {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #272727;
+}
+#servicios a {
+  color: #D9A566;
+  text-align: center;
+}
+#servicios p {
+  margin-top: 10px;
+}
+#servicios .caja1, #servicios .caja3, #servicios .caja2 {
+  padding: 10px;
+  margin: 5px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #141414;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-column: span12;
+}
+/* $mapa1: (
+    20px: red,
+    40px: orange,
+    60px: yellow,
+    80px: purple
+);
+
+
+    @each $colores in $mapa1 {
+        .maps-red, blue, black, orange, violet, purple {
+            background-color: #333;
+            height: 200px;
+            width: 500px;
+            border: 12px solid $colores;
+            text-align: center;
+            font-size: 1em;
+            line-height: 200px;
+            color: yellow;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px orange ;
+            font-family: cursive;
+            border-radius: 10px;
+        }
+
+    } */
 /* FORMULARIO */
 #formulario {
   padding: 50px;

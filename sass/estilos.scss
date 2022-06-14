@@ -1,7 +1,29 @@
+/* colores */
+
 $color-primary:#D9A566;
 $color-secondary:#c9832c;
 $color-bg:#141414;
 $light:#fff;
+
+$colores: red,
+blue,
+black,
+orange,
+violet,
+purple;
+
+/* mixins */
+
+@mixin props($fondo: grey){
+    height: 150px;
+    width: 75%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid #b9894d;
+    margin-top: 10px;
+}
+
 
 *{
     margin: 0;
@@ -38,7 +60,7 @@ body{
 .generalBtn{
     display: inline-block;
     padding: 12px 24px;
-    background-color: #ffffff1f;
+    background-color: #14141479;
     border: 1px solid $color-primary;
     border-radius: 20px;
     transition: all 0.2s ease-in;
@@ -100,7 +122,7 @@ body{
 }
 
 header{
-    background-color: #141414;
+    background-color: $color-bg;
     position:relative;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -185,7 +207,7 @@ header{
 #quienes-somos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #141414;
+    background-color: $color-bg;
 
     h2{
         margin: 20px 0px;
@@ -324,95 +346,47 @@ footer{
 
     .img-props1{
         background: url("../assets/prop1.jpg");
-        background-color: grey;
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
-        margin-top: 10px;
+        @include props();
     }
 
     .img-props2{
         background: url("../assets/prop2.jpg");
-        background-color: grey;
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
     
     .img-props3{
         background: url("../assets/prop3.jpg");
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     .img-props4{
         background: url("../assets/prop4.jpg");
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     .img-props5{
         background: url("../assets/prop5.jpg");
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     .img-props6{
         background: url("../assets/prop6.jpg");
-        height: 150px;
-        width: 75%;
-        background-position:center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     .img-props7{
         background: url("../assets/prop7.jpg");
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     .img-props8{
         background: url("../assets/prop8.jpg");
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     .img-props9{
         background: url("../assets/prop9.jpg");
-        height: 150px;
-        width: 75%;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 2px solid #b9894d;
+        @include props();
     }
 
     p{
@@ -498,6 +472,72 @@ footer{
         margin: 10px;
     }
 }
+
+/* SERVICIOS */
+
+#servicios{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #272727;
+
+    a{
+        color: $color-primary;
+        text-align: center;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    .caja1{
+        padding: 10px;
+        margin: 5px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: $color-bg;
+        color: $light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        grid-column: span12
+    }
+
+    .caja2{
+        @extend .caja1;
+    }
+
+    .caja3{
+        @extend .caja1;
+    }
+}
+
+/* $mapa1: (
+    20px: red,
+    40px: orange,
+    60px: yellow,
+    80px: purple
+);
+
+
+    @each $colores in $mapa1 {
+        .maps-#{$colores} {
+            background-color: #333;
+            height: 200px;
+            width: 500px;
+            border: 12px solid $colores;
+            text-align: center;
+            font-size: 1em;
+            line-height: 200px;
+            color: yellow;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px orange ;
+            font-family: cursive;
+            border-radius: 10px;
+        }
+
+    } */
 
 /* FORMULARIO */
 
