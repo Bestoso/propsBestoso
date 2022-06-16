@@ -36,7 +36,7 @@ html{
 }
 
 body{
-    font-family: "Candara";
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
 
     &::-webkit-scrollbar{
@@ -168,7 +168,6 @@ header{
     a{
         text-decoration: none;
         color: $light;
-        font-weight: bold;
         transition: 0.5s;
 
         &:hover{
@@ -228,8 +227,31 @@ header{
     }
 }
 
+#caracteristicas{
+    height: 40vh;
+    background-color: #191919;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    ul{
+
+        li{
+            margin: 30px;
+            list-style: none;
+            font-size: 1.5em;
+        }
+    }
+
+    .items{
+        grid-column: 1/13;
+        margin: auto;
+        color: $light;
+        text-align: center;
+    }
+}
+
 #hero2{
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../assets/img-form.png");
+    background:linear-gradient(rgba(82, 82, 82, 0.156), rgba(15, 15, 15, 0.237)),url("../assets/img-form.png");
     background-color: grey;
     height: 0vh;
     background-position: center center;
@@ -252,7 +274,7 @@ header{
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.038);
+            background-color: #ffffff12;
             color: $light;
 
             h3{
@@ -265,13 +287,28 @@ header{
             }
             
         }
+
+        .texto{
+            color: white;
+            grid-row: 1;
+            grid-column: 8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            h3{
+                font-size: 1.4;
+                margin-top: 40px;
+            }
+        }
     
         .input-group {
             display: flex;
             align-items: center;
             grid-column:8;
             grid-row: 2;
-        
+
             .input {
                 min-height: 50px;
                 max-width: 150px;
@@ -294,8 +331,8 @@ header{
                 cursor: pointer;
                 transition: background-color .3s ease-in-out;
 
-                :hover {
-                    background-color: #a7620d
+                &:hover {
+                    background-color: #835722
                 }
             }
         }
@@ -392,6 +429,7 @@ footer{
     p{
         color: $color-primary;
         font-weight: bold;
+        margin: 5px;
     }
 
     .texto{
@@ -401,6 +439,7 @@ footer{
 
     h3{
         text-decoration: underline 2px;
+        margin: 5px;
     }
 
     .titulo{
@@ -513,40 +552,12 @@ footer{
     }
 }
 
-/* $mapa1: (
-    20px: red,
-    40px: orange,
-    60px: yellow,
-    80px: purple
-);
-
-
-    @each $colores in $mapa1 {
-        .maps-#{$colores} {
-            background-color: #333;
-            height: 200px;
-            width: 500px;
-            border: 12px solid $colores;
-            text-align: center;
-            font-size: 1em;
-            line-height: 200px;
-            color: yellow;
-            text-transform: uppercase;
-            text-shadow: 0 0 5px orange ;
-            font-family: cursive;
-            border-radius: 10px;
-        }
-
-    } */
-
-/* FORMULARIO */
-
 #formulario{
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     justify-content: center;
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("assets/bg2.jpg");
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../assets/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -556,7 +567,7 @@ footer{
     }
 
     .forms{
-        background-color: #14141479;
+        background-color: $color-bg;
         border-radius: 10px;
         padding: 20px;
     }
@@ -696,7 +707,7 @@ footer{
         transition: all 0.5s;
 
         &.abajo{
-            background: $color-bg;
+            background: #121212;
             transition: all 0.5s;
         }
 
@@ -707,7 +718,8 @@ footer{
         }
 
         .menu{
-            grid-column: 7/-1;
+            margin-left: 50px;
+            grid-column: 6/-1;
         }
     
         ul li{
@@ -732,7 +744,7 @@ footer{
         .nosotros-img{
             margin: 30px 0px 20px 40px;
             border-radius: 15px;
-            background-image:url("../assets/img-cont.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../assets/cont.jpg");
             background-size: cover;
             background-position: center center;
             height: 300px;
@@ -817,7 +829,8 @@ footer{
         }
 
         .menu{
-            grid-column: 8/-1;
+            margin-left: 80px;
+            grid-column: 7/-1;
         }
     }
 
@@ -833,4 +846,12 @@ footer{
         }
     }
 
+    #caracteristicas{
+        height: 0.5vh;
+        background-color: #2d2d2d;
+
+        .items{
+            display: none;
+        }
+    }
 }

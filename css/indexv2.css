@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Candara";
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 body::-webkit-scrollbar {
@@ -130,7 +130,6 @@ header ul li {
 header a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
   transition: 0.5s;
 }
 header a:hover {
@@ -183,8 +182,26 @@ header a:hover {
   grid-column: 1/span2;
 }
 
+#caracteristicas {
+  height: 40vh;
+  background-color: #191919;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+#caracteristicas ul li {
+  margin: 30px;
+  list-style: none;
+  font-size: 1.5em;
+}
+#caracteristicas .items {
+  grid-column: 1/13;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+
 #hero2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/img-form.png");
+  background: linear-gradient(rgba(82, 82, 82, 0.156), rgba(15, 15, 15, 0.237)), url("../assets/img-form.png");
   background-color: grey;
   height: 0vh;
   background-position: center center;
@@ -205,7 +222,7 @@ header a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.038);
+  background-color: rgba(255, 255, 255, 0.0705882353);
   color: #fff;
 }
 #hero2 .cont-form .cont-form__texto h3 {
@@ -214,6 +231,19 @@ header a:hover {
 }
 #hero2 .cont-form .cont-form__texto p {
   margin: 0px 50px;
+}
+#hero2 .cont-form .texto {
+  color: white;
+  grid-row: 1;
+  grid-column: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#hero2 .cont-form .texto h3 {
+  font-size: 1.4;
+  margin-top: 40px;
 }
 #hero2 .cont-form .input-group {
   display: flex;
@@ -242,8 +272,8 @@ header a:hover {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-#hero2 .cont-form .input-group .button--submit :hover {
-  background-color: #a7620d;
+#hero2 .cont-form .input-group .button--submit:hover {
+  background-color: #835722;
 }
 
 footer {
@@ -378,6 +408,7 @@ footer p {
 #tarjetas p {
   color: #D9A566;
   font-weight: bold;
+  margin: 5px;
 }
 #tarjetas .texto {
   margin-top: 10px;
@@ -385,6 +416,7 @@ footer p {
 }
 #tarjetas h3 {
   text-decoration: underline 2px;
+  margin: 5px;
 }
 #tarjetas .titulo {
   grid-column: 1/12;
@@ -471,38 +503,12 @@ footer p {
   text-align: center;
   grid-column: span12;
 }
-/* $mapa1: (
-    20px: red,
-    40px: orange,
-    60px: yellow,
-    80px: purple
-);
-
-
-    @each $colores in $mapa1 {
-        .maps-red, blue, black, orange, violet, purple {
-            background-color: #333;
-            height: 200px;
-            width: 500px;
-            border: 12px solid $colores;
-            text-align: center;
-            font-size: 1em;
-            line-height: 200px;
-            color: yellow;
-            text-transform: uppercase;
-            text-shadow: 0 0 5px orange ;
-            font-family: cursive;
-            border-radius: 10px;
-        }
-
-    } */
-/* FORMULARIO */
 #formulario {
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/bg2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -511,7 +517,7 @@ footer p {
   color: #fff;
 }
 #formulario .forms {
-  background-color: rgba(20, 20, 20, 0.4745098039);
+  background-color: #141414;
   border-radius: 10px;
   padding: 20px;
 }
@@ -620,7 +626,7 @@ footer p {
     transition: all 0.5s;
   }
   header.abajo {
-    background: #141414;
+    background: #121212;
     transition: all 0.5s;
   }
   header .navBar {
@@ -629,7 +635,8 @@ footer p {
     justify-content: space-around;
   }
   header .menu {
-    grid-column: 7/-1;
+    margin-left: 50px;
+    grid-column: 6/-1;
   }
   header ul li {
     margin: 0px 2px;
@@ -648,7 +655,7 @@ footer p {
   #quienes-somos .nosotros-img {
     margin: 30px 0px 20px 40px;
     border-radius: 15px;
-    background-image: url("../assets/img-cont.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/cont.jpg");
     background-size: cover;
     background-position: center center;
     height: 300px;
@@ -714,7 +721,8 @@ footer p {
     margin: 0px 5px;
   }
   header .menu {
-    grid-column: 8/-1;
+    margin-left: 80px;
+    grid-column: 7/-1;
   }
   #hero2 {
     height: 40vh;
@@ -724,6 +732,13 @@ footer p {
   }
   #hero2 .cont-form .cont-form__texto {
     display: flex;
+  }
+  #caracteristicas {
+    height: 0.5vh;
+    background-color: #2d2d2d;
+  }
+  #caracteristicas .items {
+    display: none;
   }
 }
 
